@@ -1,18 +1,30 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="hero img-hero is-fullheight">
+      <div class="">title</div>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
+  name: 'home'
 }
 </script>
+
+<style>
+  @media (min-width: 769px) {
+    .img-hero {
+      background: url(../assets/home.jpg) no-repeat center center;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .img-hero {
+      background: url(../assets/mobile-home.jpg) no-repeat center center;
+      background-size: cover;
+    }
+  }
+</style>
