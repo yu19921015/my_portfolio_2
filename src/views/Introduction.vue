@@ -2,6 +2,9 @@
   <div class="self-introduction">
     <div class="columns">
       <div class="column">
+        <div class="title has-text-centered">
+          Introduction
+        </div>
         <div class="content">
           <p class="is-size-4">小山　優</p>
           <p class="is-size-4">Yu Koyama</p>

@@ -1,9 +1,12 @@
 <template>
   <div class="section">
     <div class="container">
+      <div class="title has-text-centered">
+        Skill
+      </div>
       <div class="columns">
         <div class="column">
-          <article class="message is-link">
+          <article class="message is-info">
             <div class="message-header">
               <p>Java</p>
               <button @click="isClosedJava=!isClosedJava" :class="{hidden: isClosedJava}">▲</button>
@@ -15,7 +18,7 @@
               オブジェクト指向など，プログラミングに必要な思想を学ぶことができました．
             </div>
           </article>
-          <article class="message is-link">
+          <article class="message is-info">
             <div class="message-header">
               <p>Visual Basic (VBA)</p>
               <button @click="isClosedHtml=!isClosedHtml" :class="{hidden: isClosedHtml}">▲</button>
@@ -28,7 +31,7 @@
           </article>
         </div>
         <div class="column">
-          <article class="message is-link">
+          <article class="message is-info">
             <div class="message-header">
               <p>HTML & CSS</p>
               <button @click="isClosedVba=!isClosedVba" :class="{hidden: isClosedVba}">▲</button>
@@ -39,7 +42,7 @@
               学んで良かったと思う．cssフレームワークのbulmaを使えます．
             </div>
           </article>
-          <article class="message is-link">
+          <article class="message is-info">
             <div class="message-header">
               <p>Java Script</p>
               <button @click="isClosedJavaScript=!isClosedJavaScript" :class="{hidden: isClosedJavaScript}">▲</button>
@@ -61,17 +64,17 @@
     name: "Skill",
     data() {
       return {
-        isClosedJava : true,
-        isClosedHtml : true,
-        isClosedVba : true,
-        isClosedJavaScript : true
+        isClosedJava: true,
+        isClosedHtml: true,
+        isClosedVba: true,
+        isClosedJavaScript: true
       }
     }
   }
 </script>
 
 <style>
- .hidden {
-   display: none;
- }
+  .hidden {
+    display: none;
+  }
 </style>
