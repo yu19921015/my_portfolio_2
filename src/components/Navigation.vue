@@ -15,28 +15,28 @@
 
       <div id="navMenuMore" class="navbar-menu" :class="{'is-active': showNav}">
         <div class="navbar-end">
-          <a class="navbar-item">
+          <a class="navbar-item" @click="showNav=!showNav">
             <router-link to="/introduction">
               Introduction
             </router-link>
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" @click="showNav=!showNav">
             <router-link to="/career">
               <!--<span class="has-text-primary">Career</span>-->
               Career
             </router-link>
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" @click="showNav=!showNav">
             <router-link to="/skill">
               Skill
             </router-link>
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" @click="showNav=!showNav">
             <router-link to="/portfolio">
               Portfolio
             </router-link>
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" @click="showNav=!showNav">
             <router-link to="/contact">
               Contact
             </router-link>

@@ -1,6 +1,5 @@
 <template>
   <section>
-    <b-collapse>
       <button class="button is-info" @click="isClosed=!isClosed">
         {{name}}
       </button>
@@ -9,7 +8,6 @@
           <p v-html="item"></p>
         </div>
       </div>
-    </b-collapse>
   </section>
 </template>
 
