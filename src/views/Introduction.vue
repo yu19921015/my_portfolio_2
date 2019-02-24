@@ -28,12 +28,11 @@
 </script>
 
 <style>
-
   @media (max-width: 768px) {
     .self-introduction {
       margin-top: 3rem;
-      margin-left: 5rem;
-      margin-right: 5rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
     }
   }
 

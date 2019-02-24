@@ -22,6 +22,7 @@
           </a>
           <a class="navbar-item">
             <router-link to="/career">
+              <!--<span class="has-text-primary">Career</span>-->
               Career
             </router-link>
           </a>
