@@ -2,8 +2,8 @@
   <div class="home">
     <div class="hero img-hero is-fullheight">
       <strong class="home-intro">
-        小山　優　のポートフォリオサイトへようこそ．<br>
-        ITコンサルタントとプログラマーをやっています．
+        {{getMessages.message_1}}<br>
+        {{getMessages.message_2}}
       </strong>
     </div>
   </div>
@@ -12,7 +12,15 @@
 <script>
 
 export default {
-  name: 'home'
+  name: 'home',
+  computed: {
+    language() {
+      return this.$store.getters.language
+    },
+    getMessages() {
+      return require('./home_' + this.language + '.json')
+    }
+  }
 }
 </script>
 

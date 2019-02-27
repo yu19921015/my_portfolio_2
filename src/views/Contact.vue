@@ -6,7 +6,7 @@
           Contact
         </div>
         <div class="content">
-          <p>CareerページやSkillページの内容，その他ご質問がございましたら，お気軽にご連絡ください．</p>
+          <p>{{getMessages.message_1}}</p>
             <span class="icon icon-envelope has-text-info">
             <i class="fas fa-envelope fa-lg"></i>
             </span>
@@ -19,7 +19,15 @@
 
 <script>
   export default {
-    name: "Contact"
+    name: "Contact",
+    computed: {
+      language() {
+        return this.$store.getters.language
+      },
+      getMessages() {
+        return require('./contact_' + this.language + '.json')
+      }
+    }
   }
 </script>
 

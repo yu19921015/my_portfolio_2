@@ -6,8 +6,8 @@
           Portfolio
         </div>
         <div class="content">
-          <p>GitHubにこれまでの作品を公開しています．</p>
-          <p>どうぞ，ご覧くださいませ．</p>
+          <p>{{getMessages.message_1}}</p>
+          <p>{{getMessages.message_2}}</p>
           <a href="https://github.com/yu19921015" target="_blank">
             <span class="icon">
             <i class="fab fa-github fa-lg"></i>
@@ -22,7 +22,15 @@
 
 <script>
   export default {
-    name: "Portfolio"
+    name: "Portfolio",
+    computed: {
+      language() {
+        return this.$store.getters.language
+      },
+      getMessages() {
+        return require('./portfolio_' + this.language + '.json')
+      }
+    }
   }
 </script>
 
