@@ -41,6 +41,19 @@
               Contact
             </router-link>
           </a>
+          <a class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Language
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                <div class="dropdown-text" @click="changeToJapanese">Japanese</div>
+              </a>
+              <a class="navbar-item">
+                <div class="dropdown-text" @click="changeToEnglish">English</div>
+              </a>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -54,6 +67,14 @@
     data() {
       return {
         showNav: false
+      }
+    },
+    methods: {
+      changeToJapanese() {
+        this.$store.commit('setLanguage', 'ja')
+      },
+      changeToEnglish() {
+        this.$store.commit('setLanguage', 'en')
       }
     }
   }
